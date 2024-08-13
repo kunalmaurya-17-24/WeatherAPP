@@ -1,0 +1,180 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #393E46, #00ADB5); /* Gradient from #393E46 to #00ADB5 */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #EEEEEE; /* Text color from palette */
+}
+
+.App {
+  text-align: center;
+}
+
+.weather-app {
+  background: rgba(34, 40, 49, 0.9); /* Background color with opacity */
+  padding: 18px 35px 5px 14px;
+  border-radius: 15px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Lighter shadow */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(34, 40, 49, 0.3); /* Soft border */
+  width: 350px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.city-search input.city {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #00ADB5; /* Border color from palette */
+  font-size: 16px;
+  outline: none;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #222831; /* Background color from palette */
+  color: #EEEEEE; /* Text color from palette */
+}
+
+.city-name h2 {
+  font-size: 24px;
+  margin: 10px 0;
+  letter-spacing: 1.5px;
+  color: #00ADB5; /* Color from palette */
+}
+
+.city-name span {
+  font-size: 18px;
+  color: #EEEEEE; /* Color from palette */
+  margin-left: 5px;
+}
+
+.date {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: #EEEEEE; /* Color from palette */
+}
+
+.icon-temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  margin: 20px 0;
+}
+
+.icon-temp img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.icon-temp .deg {
+  font-size: 32px;
+  vertical-align: super;
+  color: #00ADB5; /* Color from palette */
+}
+
+.des-wind {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #EEEEEE; /* Color from palette */
+}
+
+.des-wind p {
+  margin: 5px 0;
+}
+
+.error-message {
+  color: #00ADB5; /* Error color for visibility */
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.Oval {
+  margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+  .weather-app {
+    width: 90%;
+    padding: 18px 33px 5px 14px;
+  }
+
+  .icon-temp {
+    font-size: 48px;
+  }
+
+  .icon-temp img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .city-name h2 {
+    font-size: 20px;
+  }
+
+  .city-name span {
+    font-size: 16px;
+  }
+
+  .date {
+    font-size: 16px;
+  }
+
+  .des-wind {
+    font-size: 16px;
+  }
+
+  .error-message {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-app {
+    width: 100%;
+    padding: 18px 35px 5px 15px;
+  }
+
+  .icon-temp {
+    font-size: 36px;
+  }
+
+  .icon-temp img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .city-name h2 {
+    font-size: 18px;
+  }
+
+  .city-name span {
+    font-size: 14px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+
+  .des-wind {
+    font-size: 14px;
+  }
+
+  .error-message {
+    font-size: 14px;
+  }
+}
